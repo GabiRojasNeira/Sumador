@@ -3,12 +3,33 @@
 #define s scanf
 int main (void)
 {
-    int num1, num2, suma;
+    float num1, num2, suma, resta, multiplicador, division;
     p("Ingrese un valor:");
-    s("%d",&num1);
+    s("%f",&num1);
     p("Ingrese otro valor:");
-    s("%d", &num2);
+    s("%f", &num2);
     suma = num1 + num2;
-    p("%d + %d = %d", num1, num2, suma);
+    p("%f + %f = %f", num1, num2, suma);
+
+    p("Ingrese un valor:");
+    s("%f",&num1);
+    p("Ingrese otro valor:");
+    s("%f", &num2);
+    resta = num1 - num2;
+    p("%f - %f = %f", num1, num2, resta);
+
+    p("Ingrese un valor:");
+    s("%f",&num1);
+    p("Ingrese otro valor:");
+    s("%f", &num2);
+    multiplicador = num1 * num2;
+    p("%f * %f = %f", num1, num2, multiplicador);
+    
+    p("Ingrese un valor:");
+    s("%f",&num1);
+    p("Ingrese otro valor:");
+    s("%f", &num2);
+    division = num1 / num2;
+    p("%f / %f = %f", num1, num2, division);
     return 0;
 }
